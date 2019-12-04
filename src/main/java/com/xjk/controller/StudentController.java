@@ -16,7 +16,7 @@ public class StudentController {
 //    @RequestMapping("/getAllStudent")
     @RequestMapping("/student/getAllStudent")
     public ModelAndView getAllStudent(){
-        System.out.println("come in ..");
+        System.out.println("come2222 in222 ..");
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("students", studentService.getAllStudent());
         modelAndView.setViewName("main");

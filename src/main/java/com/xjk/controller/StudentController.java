@@ -24,4 +24,13 @@ public class StudentController {
         return modelAndView;
     }
 
+    //@RequestMapping("/getAllStudent")
+    public ModelAndView getS(){
+        System.out.println("come in ..");
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("students", studentService.getAllStudent());
+        modelAndView.setViewName("main");
+
+        return modelAndView;
+    }
 }
